@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NEWS&RELEASE詳細｜Vigiee(ビギー)</title>
+		<meta name="keywords" content="Vigiee,ビギー,NEWS&RELEASE詳細,ニュース">
+		<meta name="description" content="Vigiee(ビギー）のNEWS&RELEASE詳細ページです。">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/news.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120219286-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-120219286-1');
+		</script>
+		<script src="js/password.js"></script>
+	</head>
+	<body>
+		<header id="head">
+			<div class="header wm">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo_white.png">
+					</a>
+				</div>
+				<nav id="nav">
+					<ul class="nav">
+						<li><a href="about.html">Vigieeについて</a></li>
+						<li class="on"><a href="news.html">NEWS＆RELEASE一覧</a></li>
+						<li><a href="faq.html">Ｑ＆Ａ</a></li>
+						<li><a href="contact.html">会社概要/お問い合わせ</a></li>
+					</ul>
+					<div class="nbtn">
+    					<a href="javascript:;"><span class="nbtn_icon"></span></a>
+					</div>
+					<div class="ncart">
+    					<a href="javascript:;" class="cart"><img src="img/icon_cart.png"></a>
+					</div>
+				</nav>
+				<!--<div class="head_icon">
+					<a href="javascript:;" title="facebook"><img src="img/icon_facebook.png"></a>
+					<a href="javascript:;" title="twitter"><img src="img/icon_twitter.png"></a>
+					<a href="javascript:;" title="instagram"><img src="img/icon_instagram.png"></a>
+				</div>-->
+			</div>
+		</header>
+		
+		<div id="main">
+			
+			<div class="content">
+				<div class="wn">
+					<div class="news_detail">
+						<div class="nd_tit"></div>
+						<div class="nd_date"></div>
+						<div class="nd_content"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<footer id="foot">
+			<div class="foot_btn">
+				<a href="javascript:;" class="cart">
+					<img src="img/foot_btn_cart.png">
+				</a>
+				<a href="javascript:;" id="top" class="img_replace">
+					<img src="img/foot_btn_top.png">
+					<img src="img/foot_btn_top_s.png">
+				</a>
+			</div>
+			<div class="foot wm">
+				<div class="foot_nav">
+					<ul>
+						<li>
+							<i></i>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<i></i>
+							<a href="about.html">Vigieeについて</a>
+						</li>
+						<li>
+							<i></i>
+							<a href="news.html">NEWS＆RELEASE一覧</a>
+						</li>
+					</ul>
+				</div>
+				<div class="foot_logo">
+					<a href="index.html">
+						<img src="img/foot_logo.png">
+					</a>
+				</div>
+				<div class="foot_nav">
+					<ul>
+						<li>
+							<i></i>
+							<a href="faq.html">Ｑ＆Ａ</a>
+						</li>
+						<li>
+							<i></i>
+							<a href="contact.html">会社概要/お問い合わせ</a>
+						</li>
+						<li>
+							<i></i>
+							<a href="privacy.html">プライバシーポリシー</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="foot_info">
+				<div class="wm">
+					<div class="foot_contact">
+						<h2>株式会社Comfort</h2>
+						<p>〒150-0012<br>東京都渋谷区広尾1-7-20 DOTビル4F</p>
+					</div>
+					<div class="foot_email">
+						<a href="contact.html">
+							<img src="img/foot_icon_email.png">
+							<b>お問い合わせはこちら</b>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>&copy; 株式会社Comfort All Rights Reserved.</p>
+			</div>
+		</footer>
+		
+		<div id="panel"></div>
+		
+		<script type="text/javascript" src="//webfonts.xserver.jp/js/xserver.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/global.js"></script>
+		<script src="js/animate.js"></script>
+		<script src="js/constraint.js"></script>
+		<script>
+			$(function(){
+				if ($_GET['id']) {
+					var id = $_GET['id'];
+						$.get("wordpress/?page_id=2&id="+id, function (data) {
+	                	var detail = data.data.detail;
+	                	$('.nd_tit').text(detail.title);
+	                	$('.nd_date').text('[' + detail.date + ']');
+	                	$('.nd_content').html(detail.content);
+	                });
+				}
+			});
+		</script>
+	</body>
+</html>

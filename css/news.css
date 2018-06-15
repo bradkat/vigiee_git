@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+.news_tit img {
+	display: block;
+	margin: 0 auto;
+}
+
+.news_list ul {
+}
+
+.news_list ul li {
+	padding: 54px 0 50px;
+	border-bottom: 5px solid #1E1E1E;
+}
+
+.news_img {
+	float: left;
+	display: inline-block;
+	width: 424px;
+	height: 292px;
+	background: #CCC;
+}
+
+.news_img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.news_txt {
+	float: left;
+	display: inline-block;
+	width: calc(100% - 424px - 64px);
+	height: 292px;
+	padding: 0 0 0 64px;
+}
+
+.news_txt small {
+	display: block;
+	font-size: 3rem;
+	line-height: 32px;
+	font-weight: bold;
+	color: #9BD48B;
+	text-indent: -0.5em;
+	overflow: hidden;
+}
+
+.news_txt b {
+	display: block;
+	height: 80px;
+	font-size: 4.5rem;
+	line-height: 80px;
+	color: #1E1E1E;
+	overflow: hidden;
+}
+
+.news_txt span {
+	display: block;
+	height: 105px;
+	padding: 2px 0 0;
+	margin: 0 0 21px;
+	font-size: 2.4rem;
+	line-height: 35px;
+	font-weight: bold;
+	color: #1E1E1E;
+	overflow: hidden;
+}
+
+.news_txt a {
+	float: right;
+	display: inline-block;
+	height: 50px;
+	padding: 0 46px;
+	font-size: 2.4rem;
+	line-height: 50px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #1E1E1E;
+	border: 2px solid #94D48E;
+	border-radius: 27px;
+}
+
+.news_txt a:hover {
+	color: #FFF;
+	background: #94D48E;
+}
+
+.news_txt:hover {
+	background: #FEFEFE;
+}
+
+.nd_tit {
+	padding: 17px 0;
+	font-size: 4.5rem;
+	line-height: 48px;
+	font-weight: bold;
+	text-align: center;
+	color: #1E1E1E;
+}
+
+.nd_date {
+	font-size: 3rem;
+	line-height: 36px;
+	font-weight: bold;
+	text-align: center;
+	color: #9BD48B;
+}
+
+.nd_info {
+	padding: 54px 0 38px;
+	font-size: 2.4rem;
+	line-height: 36px;
+	font-weight: bold;
+	color: #1E1E1E;
+}
+
+.nd_img img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	background: #CCC;
+}
+
+.nd_content {
+	padding: 36px 0 0;
+	font-size: 2.4rem;
+	line-height: 35px;
+	font-weight: bold;
+	color: #1E1E1E;
+}
+
+.nd_content img {
+	max-width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+	
+	.news_tit img {
+		width: 100%;
+	}
+	
+	.news_list {
+		padding: 0 20px;
+	}
+	
+	.news_list ul li {
+		padding: 30px 0;
+	}
+	
+	.news_img {
+		width: 318px;
+		height: 219px;
+	}
+	
+	.news_txt {
+		width: calc(100% - 318px - 30px);
+		height: 219px;
+		padding: 0 0 0 30px;
+	}
+	
+	.news_txt small {
+		font-size: 2.4rem;
+		line-height: 28px;
+	}
+	
+	.news_txt b {
+		height: 54px;
+		font-size: 3.2rem;
+		line-height: 54px;
+	}
+	
+	.news_txt span {
+		height: 84px;
+		font-size: 2rem;
+		line-height: 28px;
+		margin: 0 0 9px;
+	}
+	
+	.news_txt a {
+		height: 38px;
+		padding: 0 30px;
+		font-size: 2rem;
+		line-height: 38px;
+		border-radius: 21px;
+	}
+	
+	.nd_tit {
+		font-size: 4rem;
+		line-height: 1.2;
+	}
+	
+	.nd_date {
+		font-size: 2.6rem;
+		line-height: 1.5;
+	}
+	
+	.nd_info {
+		padding: 36px 0 24px;
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+	
+	.nd_img img {
+		width: 100%;
+	}
+	
+	.nd_content {
+		font-size: 2.2rem;
+		line-height: 1.5;
+		font-weight: bold;
+		color: #1E1E1E;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.news_tit img {
+		width: 100%;
+	}
+	
+	.news_list {
+		padding: 0 10px;
+	}
+	
+	.news_list ul li {
+		padding: 20px 0;
+	}
+	
+	.news_img {
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	.news_txt {
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 10px 0 0;
+	}
+	
+	.news_txt small {
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+	
+	.news_txt b {
+		height: 48px;
+		font-size: 2.4rem;
+		line-height: 48px;
+	}
+	
+	.news_txt span {
+		height: auto;
+		font-size: 1.8rem;
+		line-height: 24px;
+		margin: 0 0 9px;
+	}
+	
+	.news_txt a {
+		height: 32px;
+		padding: 0 20px;
+		font-size: 1.8rem;
+		line-height: 32px;
+		border-radius: 18px;
+	}
+	
+	.nd_tit {
+		padding: 10px 0;
+		font-size: 2.4rem;
+		line-height: 1.2;
+	}
+	
+	.nd_date {
+		font-size: 2.2rem;
+		line-height: 1.5;
+	}
+	
+	.nd_info {
+		padding: 20px 0;
+		font-size: 1.8rem;
+		line-height: 1.5;
+	}
+	
+	.nd_img img {
+		width: 100%;
+	}
+	
+	.nd_content {
+		padding: 20px 0 0;
+		font-size: 1.6rem;
+		line-height: 1.5;
+	}
+}

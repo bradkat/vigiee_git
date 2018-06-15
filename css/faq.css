@@ -1,0 +1,207 @@
+@charset "utf-8";
+.qa_classify {
+	display: table;
+	width: 100%;
+	border-top: 1px solid #94D48E;
+	border-bottom: 1px solid #94D48E;
+}
+
+.qa_classify a {
+	display: table-cell;
+	width: 25%;
+	height: 38px;
+	padding: 10px 0;
+	font-size: 0;
+	text-align: center;
+	border-left: 1px solid #94D48E;
+}
+
+.qa_classify a:first-child {
+	border: 0 none;
+}
+
+.qa_classify a img {
+	display: inline-block;
+	height: 100%;
+	margin: 0 8px 0 0;
+}
+
+.qa_classify a span {
+	display: inline-block;
+	font-family: "Shin Maru Go Regular", "Jun 501", "メイリオ";
+	font-size: 2rem;
+	line-height: 38px;
+	vertical-align: top;
+	color: #1E1E1E;
+}
+
+.qa {
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+.qa_tit {
+	height: 38px;
+	padding: 100px 0 30px;
+	font-size: 0;
+	border-bottom: 3px solid #94D48E;
+}
+
+.qa_tit img {
+	display: inline-block;
+	height: 100%;
+	margin: 0 8px 0 0;
+}
+
+.qa_tit span {
+	display: inline-block;
+	font-family: "Jun 501", "Shin Maru Go Regular", "メイリオ";
+	font-size: 2.4rem;
+	line-height: 38px;
+	vertical-align: top;
+	color: #1E1E1E;
+}
+
+.qa_box {
+	padding: 12px 0 30px;
+	border-bottom: 3px solid #94D48E;
+}
+
+.qa_q {
+	font-size: 0;
+	text-align: center;
+}
+
+.qa_q img {
+	display: inline-block;
+	height: 73px;
+}
+
+.qa_q span {
+	padding: 0 0 0 15px;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 73px;
+	vertical-align: top;
+	color: #1E1E1E;
+}
+
+.qa_a_tit {
+	height: 58px;
+	margin: 0 0 30px;
+	font-family: "Shin Maru Go Regular", "Jun 501", "メイリオ";
+	font-size: 2.4rem;
+	line-height: 58px;
+	color: #94D48E;
+	border-bottom: 1px solid #94D48E;
+}
+
+.qa_a {
+	font-family: "Shin Maru Go Regular", "Jun 501", "メイリオ";
+	font-size: 2rem;
+	line-height: 1.8;
+	color: #1E1E1E;
+}
+
+.qa_a a {
+	color: #1E1E1E;
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+	.qa_classify a {
+		height: 24px;
+		padding: 8px 0;
+	}
+	.qa_classify a img {
+		margin: 0 4px 0 0;
+	}
+	.qa_classify a span {
+		font-size: 1.4rem;
+		line-height: 24px;
+	}
+	.qa_tit {
+		height: 32px;
+	}
+	.qa_tit img {
+		margin: 0 4px 0 0;
+	}
+	.qa_tit span {
+		font-size: 2rem;
+		line-height: 32px;
+	}
+	.qa_q img {
+		height: 56px;
+	}
+	.qa_q span {
+		padding: 0 0 0 10px;
+		line-height: 56px;
+	}
+	.qa_a {
+		font-size: 1.8rem;
+		text-align: justify;
+	}
+}
+
+@media (max-width: 767px) {
+	.qa_classify {
+		display: block;
+		clear: both;
+		overflow: hidden;
+	}
+	.qa_classify a {
+		display: block;
+		float: left;
+		width: 50%;
+		height: auto;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		padding: 5px 0 10px 0;
+	}
+	.qa_classify a:nth-of-type(odd) {
+		border-left: 0 none;
+	}
+	.qa_classify a:first-of-type,
+	.qa_classify a:nth-of-type(2) {
+		border-bottom: 1px solid #94D48E;
+	}
+	.qa_classify a span {
+		font-size: 1.2rem;
+		line-height: 1.5;
+	}
+	.qa_classify a img {
+		display: block;
+		margin: 0 auto 5px auto;
+	}
+	.qa_tit {
+		padding: 50px 0 15px;
+		height: auto;
+	}
+	.qa_tit span {
+		font-size: 2rem;
+	}
+	.qa_q img {
+		height: auto;
+		width: 12%;
+		vertical-align: middle;
+	}
+	.qa_q span {
+		width: 84%;
+		display: inline-block;
+		padding: 0 0 0 2%;
+		font-size: 1.8rem;
+		line-height: 1.5;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.qa_a {
+		font-size: 1.6rem;
+		text-align: justify;
+	}
+	.txt_center{
+		text-align: center;
+	}
+}
